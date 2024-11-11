@@ -1,0 +1,24 @@
+plugins {
+    id "java"
+}
+
+java {
+    var version = 16
+    sourceCompatibility = version
+    targetCompatibility = version
+    toolchain.languageVersion = JavaLanguageVersion.of(version)
+}
+
+repositories {
+    mavenCentral()
+    maven {url = "https://oss.sonatype.org/content/repositories/central"}
+    maven {url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"}
+    maven {url = "https://repo.extendedclip.com/content/repositories/placeholderapi/"}
+}
+
+dependencies {
+    //noinspection VulnerableLibrariesLocal
+    implementation("org.spigotmc:spigot-api:1.17-R0.1-SNAPSHOT")
+
+    implementation("me.clip:placeholderapi:2.11.5")
+}
