@@ -36,7 +36,7 @@ public class PronounDBExpansion extends PlaceholderExpansion implements Taskable
 
 	private static final String IDENTIFIER = "pronoundb";
 	private static final String AUTHOR = "JasperLorelai";
-	private static final String VERSION = "v0.0.1";
+	private static final String VERSION = "v1.0.0";
 
 	private static final String NOT_FOUND = "N/A";
 	private static final String API_URL = "https://pronoundb.org/api/v2/lookup?platform=minecraft&ids=";
